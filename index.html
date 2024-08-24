@@ -20,6 +20,9 @@
         .manrope {
             font-family: "Manrope", sans-serif;
         }
+        .hidden{
+            display: none;
+        }
     </style>
 </head>
 
@@ -523,7 +526,7 @@
         <section
             style="background-image: url(./Image/assets/bg.jpg); background-repeat: no-repeat; background-size: cover;"
             class=" py-8 md:py-24">
-            <div class="w-11/12 lg:w-9/12 mx-auto py-8 md:py-24">
+            <div class="w-11/12 md:w-8/12 mx-auto py-8 md:py-24">
                 <div class="text-center space-y-5 mb-6 md:mb-8">
                     <a class="btn bg-[#caf09f] rounded-3xl text-[#1C1C1C] text-base font- bold"><span
                             class="text-black rounded-full w-8 h-8 flex justify-center items-center"><i
@@ -547,8 +550,8 @@
                         </div>
                         <textarea required class="w-full p-4 rounded-3xl placeholder:font-semibold mb-6" rows="7"
                             placeholder="Write your message here"></textarea>
-                        <button class="border-none w-full md:w-fit" type="submit"><a
-                                class="btn bg-[#a4d968] rounded-3xl text-[#1C1C1C] text-xl font-extrabold sm:w-full md:w-fit">Send
+                        <button class="border-none w-full" type="submit"><a
+                                class="btn bg-[#a4d968] rounded-3xl text-[#1C1C1C] text-xl font-extrabold w-full">Send
                                 Mail <span
                                     class="text-white bg-[#000000] rounded-full w-8 h-8 flex justify-center items-center -rotate-45"><i
                                         class="fa-solid fa-arrow-right-long"></i></span></a></button>
@@ -559,6 +562,43 @@
         
                  
     </main>
+    <footer class="bg-[#1C1C1C] flex items-center text-center justify-center py-8 md:py-24">
+        <div class="space-y-5">
+            <div class="flex justify-center items-center  text-center">
+                <span
+                    class="text-black bg-[#ABEF5F] rounded-full w-8 h-8 flex justify-center items-center -rotate-45"><i
+                        class="fa-solid fa-arrow-right-long"></i></span>
+
+                <a class="text-white btn btn-ghost text-4xl font-extrabold">Rinterio</a>
+            </div>
+            <p class="text-[#d9d7d7] text-base font-medium w-11/12 lg:w-3/5 mx-auto">Thank you for visiting our site. We’re dedicated to crafting exceptional spaces tailored to your needs. For inquiries, collaborations, or more information, feel free to reach out to us. Stay connected and follow us on social media for updates and inspiration. We look forward to working with you!</p>
+            <div class="flex md:hidden">
+                <div  class="w-fit mx-auto ">
+                    <ul class="menu menu-vertical justify-center items-center text-center  px-1">
+                        <li class="text-base font-extrabold text-[#dfdddd]"><a class="text-center">Home</a></li>
+                        <li class="text-base font-normal text-[#d1cfcf]"><a>Services</a></li>
+                        <li class="text-base font-normal text-[#d1cfcf]"><a>Portfolio</a></li>
+                        <li class="text-base font-normal text-[#d1cfcf]"><a>Blogs</a></li>
+                        <li class="text-base font-normal text-[#d1cfcf]"><a>Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="hidden md:flex">
+                <div  class="w-fit mx-auto ">
+                    <ul class="menu menu-horizontal justify-center items-center text-center  px-1">
+                        <li class="text-base font-extrabold text-[#dfdddd]"><a class="text-center">Home</a></li>
+                        <li class="text-base font-normal text-[#d1cfcf]"><a>Services</a></li>
+                        <li class="text-base font-normal text-[#d1cfcf]"><a>Portfolio</a></li>
+                        <li class="text-base font-normal text-[#d1cfcf]"><a>Blogs</a></li>
+                        <li class="text-base font-normal text-[#d1cfcf]"><a>Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a class="btn bg-[#ABEF5F] rounded-3xl text-[#1C1C1C] text-xl font-extrabold sm:w-full md:w-fit">Book Consult <span
+                    class="text-black bg-[#ABEF5F] rounded-full w-8 h-8 flex justify-center items-center -rotate-45"><i
+                        class="fa-solid fa-arrow-right-long"></i></span></a>
+        </div>
+    </footer>
 </body>
 
 </html>
